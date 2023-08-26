@@ -29,7 +29,6 @@ router.post("/register", async (req, res) => {
 
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
-  console.log(email, password);
   if (email === "adminCoder@coder.com" && password === "adminCod3r123") {
     req.session.user = {
       name: "CoderHouse",
